@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-api_key = os.environ["GOOGLE_API_KEY"]
+api_key = os.environ["GEMINI_API_KEY"]
 
 # Initialize Google API Client
 genai.configure(api_key=api_key)

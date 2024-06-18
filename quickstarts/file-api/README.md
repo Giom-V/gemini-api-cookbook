@@ -25,7 +25,7 @@ source venv/bin/activate
 
 # Add API key to .env file
 touch .env
-echo "GOOGLE_API_KEY='YOUR_API_KEY'" >> .env
+echo "GEMINI_API_KEY='YOUR_API_KEY'" >> .env
 
 # Install dependencies.
 pip3 install -U -r requirements.txt
@@ -40,7 +40,7 @@ python3 sample.py
 
 # Add API key to .env file
 touch .env
-echo "GOOGLE_API_KEY='YOUR_API_KEY'" >> .env
+echo "GEMINI_API_KEY='YOUR_API_KEY'" >> .env
 
 # Install dependencies.
 npm install

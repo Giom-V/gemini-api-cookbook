@@ -5,14 +5,14 @@ const mime = require('mime-types');
 
 // Load environment variables from .env file
 dotenv.config({ path: '.env' });
-const API_KEY = process.env.GOOGLE_API_KEY;
-const GENAI_DISCOVERY_URL = `https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=${API_KEY}`;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GENAI_DISCOVERY_URL = `https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=${GEMINI_API_KEY}`;
 
 
 async function run(filePath, fileDisplayName) {
     // Initialize API Client
     const genaiService = await google.discoverAPI({url: GENAI_DISCOVERY_URL});
-    const auth = new google.auth.GoogleAuth().fromAPIKey(API_KEY);
+    const auth = new google.auth.GoogleAuth().fromAPIKey(GEMINI_API_KEY);
 
     // Prepare file to upload to GenAI File API
     const media = {
