@@ -53,8 +53,12 @@ const resp2 = await ai.models.countTokens({
     model: 'gemini-2.0-flash',
     contents: 'What is the purpose of life?',
 });
-console.log(resp2.text);
+console.log(resp2.countTokens);
 // [CODE ENDS]
+
+/* Output Sample
+8
+*/
 
 /* Markdown (render)
 ## Ground your requests using Google Search
