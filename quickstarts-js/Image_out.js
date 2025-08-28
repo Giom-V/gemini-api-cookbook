@@ -33,11 +33,11 @@ Following this guide, you'll learn how to do all those things and even more.
 <table>
   <tr>
     <!-- Emoji -->
-    <td bgcolor="#f5949e">
+    <td bgcolor="#ffe680">
       <font size=30>⚠️</font>
     </td>
     <!-- Text Content Cell -->
-    <td bgcolor="#f5949e">
+    <td bgcolor="#ffe680">
       <h3><font color=black>Image generation is a paid-only feature and won't work if you are on the free tier. Check the <a href="https://ai.google.dev/pricing#gemini-2.5-flash-image-preview"><font color='#217bfe'>pricing</font></a> page for more details.</font></h3>
     </td>
   </tr>
